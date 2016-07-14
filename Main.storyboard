@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nof1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LkB-bI-7kl">
+                                <rect key="frame" x="0.0" y="59" width="600" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextCell" textLabel="yN6-O0-OHo" style="IBUITableViewCellStyleDefault" id="YFI-NS-W7J">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YFI-NS-W7J" id="Gip-xx-S5F">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yN6-O0-OHo">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozG-Kv-hgt">
+                                <rect key="frame" x="0.0" y="-15" width="600" height="74"/>
+                                <items>
+                                    <navigationItem title="N of 1" prompt=" " id="YWk-I8-OTd"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LkB-bI-7kl" secondAttribute="bottom" constant="43" id="9Nv-Pl-EaT"/>
+                            <constraint firstItem="ozG-Kv-hgt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-15" id="AdC-Xn-afh"/>
+                            <constraint firstItem="LkB-bI-7kl" firstAttribute="top" secondItem="ozG-Kv-hgt" secondAttribute="bottom" id="QVG-JR-D9v"/>
+                            <constraint firstItem="LkB-bI-7kl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bbw-Ej-dEB"/>
+                            <constraint firstAttribute="trailing" secondItem="LkB-bI-7kl" secondAttribute="trailing" id="tsO-xq-HLf"/>
+                            <constraint firstItem="ozG-Kv-hgt" firstAttribute="leading" secondItem="LkB-bI-7kl" secondAttribute="leading" id="u0Z-YV-rjz"/>
+                            <constraint firstItem="ozG-Kv-hgt" firstAttribute="trailing" secondItem="LkB-bI-7kl" secondAttribute="trailing" id="yF7-dl-O1l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="LkB-bI-7kl" id="kuy-Xl-rA6"/>
+                        <segue destination="vF8-fT-164" kind="show" identifier="gnem" id="Lsd-NB-ENH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="398"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vLL-QJ-C2J">
+            <objects>
+                <viewController id="vF8-fT-164" customClass="GNEMViewController" customModule="nof1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Od1-pB-yyy"/>
+                        <viewControllerLayoutGuide type="bottom" id="6w9-1f-P5e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ahJ-7p-dzz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="fi3-as-8l7">
+                                <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5N-ro-Rr9">
+                                <rect key="frame" x="0.0" y="-14" width="600" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="Yci-o5-b34"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Ultragenyx" prompt=" " id="zFN-hK-wSt">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="w3m-LB-adk">
+                                            <connections>
+                                                <action selector="back:" destination="vF8-fT-164" id="MXv-pk-aHk"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4M-4B-NAO">
+                                <rect key="frame" x="242" y="167" width="117" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="JaS-Wp-cmL"/>
+                                    <constraint firstAttribute="height" constant="38" id="X4Z-RT-0Tf"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="button.png"/>
+                                <connections>
+                                    <action selector="signup:" destination="vF8-fT-164" eventType="touchUpInside" id="fG8-9R-e1H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYz-hb-lVO">
+                                <rect key="frame" x="170" y="520" width="261" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="Y0k-gO-ARS"/>
+                                    <constraint firstAttribute="height" constant="47" id="hXI-tt-JHH"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="whatis.png"/>
+                                <connections>
+                                    <action selector="whatis:" destination="vF8-fT-164" eventType="touchUpInside" id="CVO-gC-VD5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fi3-as-8l7" firstAttribute="leading" secondItem="ahJ-7p-dzz" secondAttribute="leading" id="3js-y2-GfA"/>
+                            <constraint firstItem="fi3-as-8l7" firstAttribute="bottom" secondItem="6w9-1f-P5e" secondAttribute="top" id="DaF-8z-o4J"/>
+                            <constraint firstItem="V4M-4B-NAO" firstAttribute="centerX" secondItem="TYz-hb-lVO" secondAttribute="centerX" id="Fgg-Dg-BS2"/>
+                            <constraint firstItem="N5N-ro-Rr9" firstAttribute="top" secondItem="ahJ-7p-dzz" secondAttribute="topMargin" constant="-14" id="NjJ-QJ-Jwe"/>
+                            <constraint firstItem="6w9-1f-P5e" firstAttribute="top" secondItem="TYz-hb-lVO" secondAttribute="bottom" constant="33" id="Ql7-Gz-CeY"/>
+                            <constraint firstItem="V4M-4B-NAO" firstAttribute="top" secondItem="ahJ-7p-dzz" secondAttribute="top" constant="167" id="S06-Nb-Hob"/>
+                            <constraint firstItem="N5N-ro-Rr9" firstAttribute="leading" secondItem="fi3-as-8l7" secondAttribute="leading" id="VdG-Va-4sv"/>
+                            <constraint firstItem="N5N-ro-Rr9" firstAttribute="trailing" secondItem="fi3-as-8l7" secondAttribute="trailing" id="Zln-tS-VPZ"/>
+                            <constraint firstAttribute="trailing" secondItem="fi3-as-8l7" secondAttribute="trailing" id="daa-a6-hd8"/>
+                            <constraint firstItem="fi3-as-8l7" firstAttribute="top" secondItem="N5N-ro-Rr9" secondAttribute="bottom" id="eKh-y8-kEW"/>
+                            <constraint firstItem="N5N-ro-Rr9" firstAttribute="centerX" secondItem="V4M-4B-NAO" secondAttribute="centerX" id="uEq-Z3-1S7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="gnemtomain" animates="NO" id="nAM-TN-QTM"/>
+                        <segue destination="Shr-fz-Szs" kind="show" identifier="gnemtoabout" animates="NO" id="u1m-XU-uC4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZX-nu-Csw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="1133"/>
+        </scene>
+        <!--Gnem About-->
+        <scene sceneID="vwW-mH-d2S">
+            <objects>
+                <viewController id="Shr-fz-Szs" customClass="GnemAbout" customModule="nof1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="64I-UD-NyK"/>
+                        <viewControllerLayoutGuide type="bottom" id="iYP-lj-Wj7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vYW-a9-SaP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eBD-aK-8Dv">
+                                <rect key="frame" x="0.0" y="87" width="600" height="493"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">GNE Myopathy (GNEM, HIBM, QSM, DMRV, Nonaka Myopathy or IBM type 2) is a rare, adult-onset, progressive muscle disease with many unanswered questions. More information is needed to better understand how this disease affects people and progresses over time.
+
+The GNEM Disease Monitoring Program (GNEM-DMP) is a way to understand how GNEM affects you and others to help guide researchers so that potential treatments can be developed as fast as possible.
+There are two ways to get involved in the GNEM-DMP: the patient-reported part, or online registry; and the physician-reported part, or natural history study.
+Even if you are participating in another registry, natural history study or clinical trial, you can still participate in the GNEM-DMP.
+You can confidentially record your own GNEM health information in the patient-reported registry of the GNEM-DMP. Only anonymous health information will be made accessible to qualified researchers who are granted permission by the Steering committee. Your personal health information will not be made available to employers, government organizations, insurance companies, educational institutions, nor to your spouse, your family members or your doctor. Please refer to the Privacy Policy for more information.
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfY-vh-jys">
+                                <rect key="frame" x="0.0" y="-12" width="600" height="74"/>
+                                <items>
+                                    <navigationItem title="GNEM-DMP" prompt=" " id="AKa-1f-TfK">
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="8qe-au-fM1">
+                                            <connections>
+                                                <action selector="back:" destination="Shr-fz-Szs" id="QP6-N2-CgJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SfY-vh-jys" firstAttribute="leading" secondItem="eBD-aK-8Dv" secondAttribute="leading" id="2HN-2s-fHX"/>
+                            <constraint firstItem="SfY-vh-jys" firstAttribute="top" secondItem="vYW-a9-SaP" secondAttribute="topMargin" constant="-12" id="SMW-sP-EC7"/>
+                            <constraint firstItem="eBD-aK-8Dv" firstAttribute="top" secondItem="SfY-vh-jys" secondAttribute="bottom" constant="25" id="cFu-ln-wnE"/>
+                            <constraint firstAttribute="trailing" secondItem="eBD-aK-8Dv" secondAttribute="trailing" id="gtT-Xx-Guj"/>
+                            <constraint firstItem="eBD-aK-8Dv" firstAttribute="leading" secondItem="vYW-a9-SaP" secondAttribute="leading" id="ldZ-Rd-akY"/>
+                            <constraint firstItem="SfY-vh-jys" firstAttribute="trailing" secondItem="eBD-aK-8Dv" secondAttribute="trailing" id="qdr-hw-jYl"/>
+                            <constraint firstAttribute="bottom" secondItem="eBD-aK-8Dv" secondAttribute="bottom" constant="20" symbolic="YES" id="zuh-5a-Zf9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="vF8-fT-164" kind="show" identifier="abouttognem" animates="NO" id="RIZ-38-rn7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzS-bE-gZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747" y="1791"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button.png" width="302" height="70"/>
+        <image name="newbg1.png" width="633" height="822"/>
+        <image name="whatis.png" width="834" height="110"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Lsd-NB-ENH"/>
+    </inferredMetricsTieBreakers>
+</document>
